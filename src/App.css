@@ -1,0 +1,185 @@
+body{
+  background: rgb(1,0,4);
+  background: linear-gradient(90deg, rgba(1,0,4,1) 0%, rgba(6,29,114,1) 100%);
+    color: white;
+}
+
+  .header {
+    background-color: #fff33f;
+    opacity: 0.8;
+    color: #051659;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .header p{
+    margin-top: 20px;
+  }
+
+  .sign-in{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .sign-in h1{
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    color: #fff33f;
+  }
+
+  .sign-in button{
+    padding: 15px 60px;
+    border: 1px solid #fff33f;
+    border-radius: 10px;
+    color: #fff33f;
+  }
+
+  
+  img {
+    border-radius: 50%;
+    height: 45px;
+    margin-top: -20px;
+    border: 2px solid black;
+  }
+  
+  p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-wrap: break-word;
+  }
+  
+  .msg {
+    width: 100px;
+    display: flex;
+    padding: 10px 10px 0 10px;
+    margin: 20px;
+    border-radius: 3000px;
+    box-shadow: 0 0 10px rgb(164, 164, 164);
+    align-items: center;
+  }
+  
+  .sent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #fff33f;
+    color: #fff33f;
+    border-top-right-radius: 200px;
+    flex-direction: row-reverse;
+    padding: 18px 5px 0 0px;
+    float: right;
+  }
+
+
+  .sent img{
+    display: none;
+  } 
+  
+  .received  {
+    padding: 18px 5px 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    margin-left: 70px;
+    border: 1px solid #fff33f;
+    color:#fff33f;
+    border-top-left-radius: 500px;
+    float: left;
+  }
+
+  .received img{
+    position: absolute;
+    left: -60px;
+    top: -15px;
+  }
+
+  .sendMsg {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    border-top: 1px solid #fff33f;
+    margin-left: -5px;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
+  .sendMsg input{
+    font-size: 15px;
+    width: 50%;
+    color: #fff33f;
+    background-color: black;
+    border: 1px solid #fff33f;
+    padding: 15px;
+    border-radius: 60px;
+    margin: 20px;
+    outline: none;
+  }
+
+  .sendMsg input::placeholder{
+    color: #fff33f;
+    opacity: 0.6;
+  }
+  
+  .msgs {
+    margin: 110px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 775px) {
+    p {
+      font-size: 20px;
+    }
+    .sent {
+      padding: 10px 10px 0 10px;
+    }
+    .received {
+      padding: 10px 10px 0 10px;
+    }
+    img {
+      height: 35px;
+      margin-top: -10px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    p {
+      font-size: 15px;
+    }
+    .sent {
+      padding: 7px 7px 0 7px;
+    }
+    .received {
+      padding: 7px 7px 0 7px;
+    }
+    img {
+      height: 30px;
+      margin-top: -7px;
+    }
+  }
