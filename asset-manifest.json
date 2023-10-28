@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/line-app/static/css/main.86fed634.css",
+    "main.js": "/line-app/static/js/main.31889295.js",
+    "index.html": "/line-app/index.html",
+    "main.86fed634.css.map": "/line-app/static/css/main.86fed634.css.map",
+    "main.31889295.js.map": "/line-app/static/js/main.31889295.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86fed634.css",
+    "static/js/main.31889295.js"
+  ]
+}
